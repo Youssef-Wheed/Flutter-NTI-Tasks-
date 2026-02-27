@@ -1,3 +1,10 @@
+void main()
+{
+  print(electricityUsage(usageInKWh: 150)); // Output: Low Consumption
+  print(electricityUsage(usageInKWh: 350)); // Output: Medium Consumption
+  print(electricityUsage(usageInKWh: 600)); // Output: High Consumption
+}
+
 String electricityUsage({ required int usageInKWh}) {
   if (usageInKWh <= 200) {
     return 'Low Consumption';
