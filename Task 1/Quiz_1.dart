@@ -1,6 +1,10 @@
 void main() {
- String states = login(username: 'student', password: 'password123', isAccountActive: true);
- print(states);
+  String states = login(
+    username: 'student',
+    password: 'iti123',
+    isAccountActive: true,
+  );
+  print(states);
 }
 
 String login({
@@ -8,10 +12,9 @@ String login({
   required String password,
   required bool isAccountActive,
 }) {
-  if (username == 'student' && password == 'password123' && isAccountActive == true) {
+  if (username == 'student' && password == 'iti123' && isAccountActive) {
     return "Login successful";
   } else {
     return "Access Denied";
   }
-  
 }
