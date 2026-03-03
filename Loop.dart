@@ -29,8 +29,9 @@ class Loop {
     for (int i = 1; i <= 10; i++) {
       print("$num x $i = ${num * i}");
     }
+  }
 
-    // This method calculates the factorial of a number using a for loop
+  // This method calculates the factorial of a number using a for loop
     int factorial({required int num}) {
       int result = 1;
 
@@ -39,7 +40,6 @@ class Loop {
       }
       return result;
     }
-  }
 
   // This method reverses a string using a for loop
   String reverseString(String text) {
@@ -54,10 +54,10 @@ class Loop {
 
   // This method checks if a number is prime using a for loop
   bool isPrime({required int num}) {
-    if (n <= 1) return false;
+    if (num <= 1) return false;
 
-    for (int i = 2; i < n; i++) {
-      if (n % i == 0) {
+    for (int i = 2; i < num; i++) {
+      if (num % i == 0) {
         return false;
       }
     }
