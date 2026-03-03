@@ -72,4 +72,10 @@ void squareStars() {
   }
 }
 
+// This method prints a triangle of stars using a for loop
+void triangleStars() {
+  for (int i = 1; i <= 5; i++) {
+    print("*" * i);
+  }
+}
 }
