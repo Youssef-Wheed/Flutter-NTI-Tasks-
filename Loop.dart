@@ -16,9 +16,9 @@ class Loop {
   }
 
   // This method calculates the sum of numbers from 1 to n using a for loop
-  int sumToN(int n) {
+  int sumToN({required int limit}) {
     int sum = 0;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= limit; i++) {
       sum += i;
     }
     return sum;
