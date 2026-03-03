@@ -53,7 +53,7 @@ class Loop {
   }
 
   // This method checks if a number is prime using a for loop
-  bool isPrime(int n) {
+  bool isPrime({required int num}) {
     if (n <= 1) return false;
 
     for (int i = 2; i < n; i++) {
@@ -88,4 +88,7 @@ class Loop {
       count++;
     } while (count <= 5);
   }
+
+
+
 }
