@@ -89,6 +89,13 @@ class Loop {
     } while (count <= 5);
   }
 
-
+// This method prints numbers from 1 to n using a while loop
+void printUsingWhile(int n) {
+  int i = 1;
+  while (i <= n) {
+    print(i);
+    i++;
+  }
+}
 
 }
