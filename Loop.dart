@@ -30,15 +30,25 @@ class Loop {
       print("$num x $i = ${num * i}");
     }
 
-// This method calculates the factorial of a number using a for loop
+    // This method calculates the factorial of a number using a for loop
     int factorial({required int num}) {
       int result = 1;
 
       for (int i = 1; i <= num; i++) {
         result *= i;
       }
-
       return result;
     }
+  }
+
+// This method reverses a string using a for loop
+  String reverseString(String text) {
+    String reversed = "";
+
+    for (int i = text.length - 1; i >= 0; i--) {
+      reversed += text[i];
+    }
+
+    return reversed;
   }
 }
