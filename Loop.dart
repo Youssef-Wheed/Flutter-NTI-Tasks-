@@ -64,4 +64,12 @@ class Loop {
 
   return true;
 }
+
+// This method prints a square of stars using a for loop  
+void squareStars() {
+  for (int i = 0; i < 5; i++) {
+    print("*****");
+  }
+}
+
 }
