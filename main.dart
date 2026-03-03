@@ -1,7 +1,6 @@
 import 'Loop.dart';
 
 void main() {
-
   Loop loop = Loop();
 
   print("Numbers from 1 to 10:");
@@ -27,6 +26,16 @@ void main() {
   bool isPrime = loop.isPrime(num: primeCheck);
   print("\nIs $primeCheck a prime number? $isPrime");
 
-  print("\nNumbers from 1 to 10 using while loop:");
-  loop.printUsingWhile(10);
+  print("\nSquare of stars:");
+  loop.squareStars();
+
+  print("\nTriangle of stars:");
+  loop.triangleStars();
+
+  print("\nSimple counter using do-while loop:");
+  loop.simpleCounter();
+
+  print("\nPrint using while loop:");
+  loop.printUsingWhile(5);
+
 }
