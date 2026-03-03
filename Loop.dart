@@ -41,7 +41,7 @@ class Loop {
     }
   }
 
-// This method reverses a string using a for loop
+  // This method reverses a string using a for loop
   String reverseString(String text) {
     String reversed = "";
 
@@ -52,30 +52,40 @@ class Loop {
     return reversed;
   }
 
-// This method checks if a number is prime using a for loop
+  // This method checks if a number is prime using a for loop
   bool isPrime(int n) {
-  if (n <= 1) return false;
+    if (n <= 1) return false;
 
-  for (int i = 2; i < n; i++) {
-    if (n % i == 0) {
-      return false;
+    for (int i = 2; i < n; i++) {
+      if (n % i == 0) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  // This method prints a square of stars using a for loop
+  void squareStars() {
+    for (int i = 0; i < 5; i++) {
+      print("*****");
     }
   }
 
-  return true;
-}
-
-// This method prints a square of stars using a for loop  
-void squareStars() {
-  for (int i = 0; i < 5; i++) {
-    print("*****");
+  // This method prints a triangle of stars using a for loop
+  void triangleStars() {
+    for (int i = 1; i <= 5; i++) {
+      print("*" * i);
+    }
   }
-}
 
-// This method prints a triangle of stars using a for loop
-void triangleStars() {
-  for (int i = 1; i <= 5; i++) {
-    print("*" * i);
+  // This method prints a simple counter using a do-while loop
+  void simpleCounter() {
+    int count = 1;
+
+    do {
+      print("Counter = $count");
+      count++;
+    } while (count <= 5);
   }
-}
 }
