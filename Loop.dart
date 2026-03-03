@@ -23,4 +23,11 @@ class Loop {
     }
     return sum;
   }
+
+  // This method prints the multiplication table for a given number using a for loop
+  void multiplicationTable({required int num}) {
+    for (int i = 1; i <= 10; i++) {
+      print("$num x $i = ${num * i}");
+    }
+  }
 }
