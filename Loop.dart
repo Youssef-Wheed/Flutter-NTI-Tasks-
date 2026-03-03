@@ -29,5 +29,16 @@ class Loop {
     for (int i = 1; i <= 10; i++) {
       print("$num x $i = ${num * i}");
     }
+
+// This method calculates the factorial of a number using a for loop
+    int factorial({required int num}) {
+      int result = 1;
+
+      for (int i = 1; i <= num; i++) {
+        result *= i;
+      }
+
+      return result;
+    }
   }
 }
